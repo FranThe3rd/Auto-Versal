@@ -427,6 +427,7 @@ header {
     /* Adjust styles vehicles page */
 
     .car-select {
+        transition: all 0.3s ease 0s;
         width: 120px;
     }
 
@@ -441,7 +442,7 @@ header {
     }
 
     .car-select:hover {
-        opacity: 80%;
+        opacity: 75%;
     }
 
     .car-select:active {
