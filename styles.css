@@ -372,7 +372,9 @@ header {
  /* Adjust styles for small screens */
 
 
-@media (max-width: 400px) {
+@media screen and (max-width: 600px) {
+
+
 
      /* Adjust styles home page */
 
@@ -408,7 +410,7 @@ header {
     }
 
     .car-slider-container {
-        top: 65%;
+        top: 75%;
         position: absolute;
         height: 10px;
         transform: translate(0%, 100%);
