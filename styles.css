@@ -30,6 +30,7 @@
 }
 
 .service-container {
+
     animation: transitionIn 0.75s;
 }
 
@@ -362,6 +363,10 @@ header {
     transition: all 0.3s ease 0s;
     font-size: 16px;
     font-weight: bold
+}
+
+.about-img {
+    width: 100%;
 }
 
 
