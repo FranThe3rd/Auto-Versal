@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Auto Versal</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <!--
+        Home Header
+        -->
+
+    <header>
+        <img class="logo" src="images/car logo.png" alt="">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="vehicles.html">Vehicles</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button class="contact-button">Contact</button></a>
+    </header>
+
+    <!--
+        Image Container 1
+    -->
+
+    <div class="integra-home-container">
+        <img class="integra-home" src="images/integra cool.jpg" alt="">
+        <div class="integra-home-text">Get up to $1,000 bonus <br> cash <br>
+            plus 3.29% APR.
+            <div class="integra-home-description">"Are modern cars all starting to look the same to you? <br>Tired of
+                the cookie-cutter designs? <br>Discover the uniqueness of our cars—crafted with a bold, <br>distinctive
+                style that breaks away from the mundane, <br>making a statement wherever you go."</div>
+            <div class="offer-button-container"><button class="offer-button" onclick="window.location.href='services.html'">See Offers</button></div>
+        </div>
+    </div>
+
+    <!--
+        Image Container 2
+    -->
+    <div class="integra-home-container">
+        <img class="integra-home" src="images/integra cool compare.png" alt="">
+        <div class="integra-home-text"> Sleek Evolution: <br>Unveiling the Future <br>of <br>Automotive Design
+            <div class="integra-home-description">"Set your sights on the captivating image on the left, <br>revealing
+                the stunning 2023 Acura Integra model. <br>Our primary goal is to enhance the car's visual appeal,
+                <br>as demonstrated in the picture on the right."
+            </div>
+            <div class="learn-button-container"><button class="learn-button" onclick="window.location.href='about.html'">Learn More</button></div>
+
+            <div class=""></div>
+        </div>
+    </div>
+
+    <!--
+        Slider Header 
+    -->
+
+    <header class="slider-header">
+        <a class="cta" href="vehicles.html"><button class="model-button">Choose A Model</button></a>
+    </header>
+
+
+    <!--
+        Slider Container 
+    -->
+
+    <div class="car-slider-container">
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="images/integra-slider.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/350z-slider.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/acura-rsx-slider.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/subaru-slider.png" alt=""></div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+
+        </div>
+
+    </div>
+
+    
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+     <!--
+        Slider Scripts 
+    -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+
+            },
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+    </script>
+</body>
+
+</html>
