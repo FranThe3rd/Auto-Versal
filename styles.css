@@ -369,6 +369,87 @@ header {
     width: 100%;
 }
 
+ /* Adjust styles for small screens */
+
+
+@media (max-width: 767px) {
+
+     /* Adjust styles home page */
+
+
+    header {
+        display: inline-block;
+    }
+
+    .integra-home-container {
+        text-align: center;
+
+    }
+    .integra-home-text {
+        font-size: 10px;
+        margin-right: 80px;
+    }
+
+    .integra-home-description {
+        font-size: 5px;
+    }
+
+    .nav_links li a {
+        font-size: 6px;
+    }
+
+    .integra-home {
+        width: 375px;
+        height: 270px;
+    }
+
+    .slider-header {
+       height: 5px ;
+    }
+
+    .car-slider-container {
+        top: 65%;
+        position: absolute;
+        height: 10px;
+        transform: translate(0%, 100%);
+
+    }
+
+    .contact-button {
+        display: none;
+    }
+
+    .cta {
+        display: none;
+    }
+    
+         
+    /* Adjust styles vehicles page */
+
+    .car-select {
+        width: 120px;
+    }
+
+    .select-info {
+        font-size: 5px;
+        top: 65%;
+        position: absolute;
+        top: 60%;
+        left: -20%;
+
+       
+    }
+
+    .car-select:hover {
+        opacity: 80%;
+    }
+
+    .car-select:active {
+        opacity: 50%;
+    }
+    
+}
+
 
 
 
