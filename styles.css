@@ -396,7 +396,7 @@ header {
         background: linear-gradient(to bottom right, rgba(85, 81, 81, 0.7), rgba(109, 107, 107, 0.7));
     }
     .integra-home-text {
-        font-size: 10px;
+        font-size: 20px;
         margin-right: 80px;
     }
 
@@ -416,6 +416,15 @@ header {
         height: 270px;
     }
 
+    .learn-button {
+        display: none;
+    }
+
+    .offer-button {
+        display: none;
+    }
+
+
         
     /* Adjust styles slider */
 
@@ -427,16 +436,18 @@ header {
     }
 
     .swiper-slide {
-        margin-right: 0px;
+        height: 20px;
+        margin-right: -20px;
     }
 
     .car-slider-container {
+        
         width: 100%;
         display: block;
         top: 90%;
         position: absolute;
         height: 50px;
-        transform: translate(-10%, 100%);
+        transform: translate(0%, 100%);
 
     }
 
