@@ -368,6 +368,21 @@ header {
     width: 100%;
 }
 
+
+.about-title {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    color: white;
+
+}
+.text-about {
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+}
+
 /* Adjust styles for small screens-------------------------------------------------------------------------------------------------------------- */
 
 
@@ -505,6 +520,14 @@ header {
     .purchase-button {
         display: none;
     }
+
+    /* Text About */
+
+    .text-about {
+        text-align: center;
+        font-size: 15px;
+    }
+
 
 
 
