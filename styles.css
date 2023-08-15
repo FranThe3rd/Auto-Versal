@@ -309,12 +309,11 @@ header {
 } 
 
 .car-select:hover {
-    width: 583px;
+    opacity: 50%;
+
 }
 
-.car-select:active {
-    opacity: 50%;
-}
+
 
 /* Styles For Services Container */
 
@@ -382,7 +381,8 @@ header {
     }
 
     .integra-home-container {
-        text-align: center;
+        text-align: left;
+        width: 350px;
 
     }
 
@@ -396,12 +396,13 @@ header {
         background: linear-gradient(to bottom right, rgba(85, 81, 81, 0.7), rgba(109, 107, 107, 0.7));
     }
     .integra-home-text {
+        margin-top: -20px;
         font-size: 20px;
         margin-right: 80px;
     }
 
     .integra-home-description {
-        font-size: 5px;
+        font-size: 8px;
     }
 
     .nav_links li a {
@@ -471,7 +472,7 @@ header {
         font-size: 5px;
         top: 65%;
         position: absolute;
-        top: 60%;
+        top: 50%;
         left: -20%;
 
        
