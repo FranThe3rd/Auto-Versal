@@ -187,7 +187,6 @@ header {
     width: 140;
     padding: 9px 25px;
     background-color: rgb(248, 248, 248);
-    border-width: 4px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     font-size: 16px;
@@ -213,7 +212,6 @@ header {
     width: 140;
     padding: 9px 25px;
     background-color: rgb(248, 248, 248);
-    border-width: 4px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     font-size: 16px;
@@ -358,7 +356,6 @@ header {
     width: 140;
     padding: 9px 25px;
     background-color: rgb(248, 248, 248);
-    border-width: 4px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     font-size: 16px;
@@ -372,7 +369,7 @@ header {
  /* Adjust styles for small screens */
 
 
-@media  (max-width: 600px) {
+@media  (max-width: 400px) {
 
 
 
@@ -419,8 +416,18 @@ header {
         height: 270px;
     }
 
+        
+    /* Adjust styles slider */
+
+
     .slider-header {
        height: 5px ;
+
+       
+    }
+
+    .swiper-slide {
+        margin-right: 0px;
     }
 
     .car-slider-container {
@@ -428,8 +435,8 @@ header {
         display: block;
         top: 90%;
         position: absolute;
-        height: 10px;
-        transform: translate(0%, 100%);
+        height: 50px;
+        transform: translate(-10%, 100%);
 
     }
 
@@ -446,7 +453,7 @@ header {
 
     .car-select {
         transition: all 0.3s ease 0s;
-        width: 120px;
+        width: 100px;
     }
 
     .select-info {
