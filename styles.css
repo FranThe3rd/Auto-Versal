@@ -6,13 +6,13 @@
 
 @keyframes transitionIn {
     from {
-        opacity:0;
-        transform:rotateX(-10deg)
+        opacity: 0;
+        transform: rotateX(-10deg)
     }
 
     to {
-        opacity:1;
-        transform:rotateX(0)
+        opacity: 1;
+        transform: rotateX(0)
     }
 }
 
@@ -58,7 +58,9 @@ body {
 
 
 
-li,a,.contact-button {
+li,
+a,
+.contact-button {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -153,10 +155,10 @@ header {
 
 .integra-home-text {
     letter-spacing: 10px;
-    top: 18%; 
-    left: 20%; 
+    top: 18%;
+    left: 20%;
     transform: (translate(100%, -50%));
-    font-family: 'Bebas Neue', sans-serif;    
+    font-family: 'Bebas Neue', sans-serif;
     background: none;
     position: absolute;
     color: white;
@@ -181,7 +183,7 @@ header {
 }
 
 .offer-button {
-    font-family: 'Bebas Neue', sans-serif;    
+    font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 4px;
     height: 2.76rem;
     width: 140;
@@ -196,17 +198,18 @@ header {
 .offer-button:hover {
     background-color: rgb(143, 143, 143);
 
-/* Styles For Learn Button */
+    /* Styles For Learn Button */
 
-    
+
 }
+
 .learn-button-container {
     margin-top: 30px;
     background: none;
 }
 
 .learn-button {
-    font-family: 'Bebas Neue', sans-serif;    
+    font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 4px;
     height: 2.76rem;
     width: 140;
@@ -220,7 +223,7 @@ header {
 
 .learn-button:hover {
     background-color: rgb(143, 143, 143);
-    
+
 }
 
 /* Styles For Car Slider */
@@ -252,10 +255,10 @@ header {
 .model-button {
     font-size: 20px;
     letter-spacing: 2px;
-    font-family: 'Bebas Neue', sans-serif; 
+    font-family: 'Bebas Neue', sans-serif;
     color: white;
     width: 300px;
-    margin-top: 100px ;
+    margin-top: 100px;
     margin-bottom: 0;
     margin-left: 610px;
     padding: 9px 25px;
@@ -285,11 +288,11 @@ header {
 
 /* Styles For Select Info Container */
 
- .select-info {
+.select-info {
     background: none;
     margin-left: 50px;
     position: absolute;
-    top: 450px; 
+    top: 450px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -306,7 +309,7 @@ header {
     cursor: pointer;
     border: 2px solid aliceblue;
 
-} 
+}
 
 .car-select:hover {
     opacity: 50%;
@@ -349,7 +352,7 @@ header {
 }
 
 .purchase-button {
-    font-family: 'Bebas Neue', sans-serif;    
+    font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 4px;
     height: 2.76rem;
     width: 140;
@@ -365,15 +368,12 @@ header {
     width: 100%;
 }
 
- /* Adjust styles for small screens */
+/* Adjust styles for small screens-------------------------------------------------------------------------------------------------------------- */
 
 
-@media  (max-width: 400px) {
+@media (max-width: 350px) {
 
-
-
-     /* Adjust styles home page */
-
+    /* Adjust styles home page */
 
     header {
         justify-content: center;
@@ -395,6 +395,7 @@ header {
         left: 0;
         background: linear-gradient(to bottom right, rgba(85, 81, 81, 0.7), rgba(109, 107, 107, 0.7));
     }
+
     .integra-home-text {
         margin-top: -20px;
         font-size: 20px;
@@ -426,14 +427,14 @@ header {
     }
 
 
-        
+
     /* Adjust styles slider */
 
 
     .slider-header {
-       height: 5px ;
+        height: 5px;
 
-       
+
     }
 
     .swiper-slide {
@@ -442,7 +443,7 @@ header {
     }
 
     .car-slider-container {
-        
+
         width: 100%;
         display: block;
         top: 90%;
@@ -459,8 +460,8 @@ header {
     .cta {
         display: none;
     }
-    
-         
+
+
     /* Adjust styles vehicles page */
 
     .car-select {
@@ -469,13 +470,12 @@ header {
     }
 
     .select-info {
-        font-size: 5px;
-        top: 65%;
+        font-size: 4px;
+        top: 30%;
         position: absolute;
-        top: 50%;
         left: -20%;
 
-       
+
     }
 
     .car-select:hover {
@@ -485,13 +485,29 @@ header {
     .car-select:active {
         opacity: 52%;
     }
-    
+
+        
+    /* Adjust service  page */
+
+    .service-container {
+        margin-top: 20px;
+
+        text-align: left;
+        width: 350px;
+        margin-bottom: 10px;
+    }
+
+    .mechanic-image {
+        width: 320;
+        height: 250px
+    }
+
+    .purchase-button {
+        display: none;
+    }
+
+
+
 }
 
- /*------------------------------------------------------------------------------------ */
-
-
-
-
-
-
+/*------------------------------------------------------------------------------------ */
