@@ -56,6 +56,12 @@ body {
 
 }
 
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 li,
@@ -260,7 +266,8 @@ header {
     width: 300px;
     margin-top: 100px;
     margin-bottom: 0;
-    margin-left: 610px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 9px 25px;
     background-color: rgb(185, 106, 15);
     border-radius: 50px;
@@ -268,6 +275,10 @@ header {
     transition: all 0.3s ease 0s;
     border: 2px solid aliceblue;
 }
+
+
+
+
 
 .model-button:hover {
     background-color: rgba(190, 106, 15, 0.8);
@@ -277,12 +288,27 @@ header {
 /* Styles For Select Container */
 
 .select-container {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
     color: white;
     margin-left: 40px;
     margin-top: 40px;
+    margin-right: 40px;
     position: relative;
 }
+
+@media screen and (max-width: 480px) {
+    .select-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+
+
+  
+  
 
 
 
@@ -304,12 +330,15 @@ header {
 
 .car-select {
     transition: all 0.3s ease 0s;
-    width: 580px;
+    max-width: 580px;
+    width: 100%;
     border-radius: 40px;
     cursor: pointer;
     border: 2px solid aliceblue;
-
+    margin-bottom: 10px;
 }
+
+
 
 .car-select:hover {
     opacity: 50%;
@@ -383,6 +412,14 @@ header {
     color: white;
 }
 
+.about-home-description {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0px;
+    background: none;
+    font-size: 20px;
+    font-weight: normal;
+}
+
 /* Adjust styles for small screens-------------------------------------------------------------------------------------------------------------- */
 
 
@@ -446,11 +483,7 @@ header {
     /* Adjust styles slider */
 
 
-    .slider-header {
-        height: 5px;
 
-
-    }
 
     .swiper-slide {
         height: 20px;
@@ -458,23 +491,20 @@ header {
     }
 
     .car-slider-container {
-
         width: 100%;
-        display: block;
-        top: 90%;
-        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
         height: 50px;
-        transform: translate(0%, 100%);
-
     }
 
     .contact-button {
         display: none;
     }
 
-    .cta {
-        display: none;
-    }
+    
 
 
     /* Adjust styles vehicles page */
